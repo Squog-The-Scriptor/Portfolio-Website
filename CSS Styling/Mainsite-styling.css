@@ -1,0 +1,81 @@
+
+.body {
+    background-color: #C59418;
+}
+
+
+/* Navigation Bar Styling */
+.nav-bar {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #0D0D0D;
+    
+}
+
+#logo {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items a, #logo {
+    color: white;
+    padding-bottom: 0.75rem;
+    padding-right: 0.625;
+    margin-right: 0.75rem;
+    text-decoration: none;
+  
+    
+}
+
+.nav-items {
+    color: white;
+    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Page Styling*/
+
+.main-page {
+    display: flex;
+    background-color: #D48E0D;
+    padding-left: 4rem;
+    padding-top: 3rem;
+    height: 100vh;
+
+    
+}
+
+
+
+.display-picture {
+    object-fit: cover;
+    width: 25rem;
+    height: 25rem;
+    margin-left: 15rem;
+    padding-bottom: 3rem;
+    
+
+
+}
+
+/*About Section Styling*/
+
+.about {
+    background-color: #D48E0D;
+
+    
+}
+
+.about h2, p {
+    color: #0D0D0D;
+}
