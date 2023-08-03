@@ -1,0 +1,31 @@
+Objective: Build a website using HTML, CSS, JavaScript
+
+Use Git version control - Review how to use with VSCode
+Use the command line and file navigation
+Deploy your site to the web using GitHub Pages - Done before
+
+
+Scope Planning:
+- Build with HTML, CSS, JS
+    - HTML body
+    - CSS styling
+    - Add JS last at the bottom (so all elements load)
+- Multi-page website
+- Have a navigation bar with drop-down options that link to different parts of the site
+- Show technologies I am able to use 
+- Show projects - FrontEnd Mentor Projects
+- About me page 
+- Photo of me 
+- Use OSRS colour scheme
+- Github Link
+- Clean, clear webpage 
+- Contact information
+- Responsive Design -media queries/em or rem scaling for sizes (design for mobile FIRST then desktop/laptop)
+
+Wireframe Keys:
+- A main header
+- Navigation to take you to all the pages on your site
+- A picture and title for each projects
+
+
+
