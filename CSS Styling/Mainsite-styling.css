@@ -1,6 +1,7 @@
 
 .body {
-    background-color: #C59418;
+    
+    
 }
 
 
@@ -17,6 +18,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+
+.logo-image {
+    padding-top: 0.5rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .nav-items a, #logo {
@@ -26,7 +34,6 @@
     margin-right: 0.75rem;
     text-decoration: none;
   
-    
 }
 
 .nav-items {
@@ -41,48 +48,152 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
 }
 
+
+.nav-highlight:hover {
+    color: gray;
+    transition: opacity 0.15;
+}
 /* Main Page Styling*/
 
 .main-page {
     display: flex;
-    background-color: #D48E0D;
-    padding-left: 4rem;
-    padding-top: 3rem;
+    margin:0;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    background-image:linear-gradient(to right, transparent 0%, #fff 35%, #0046D4 67%, transparent 100%), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N89+7dfwYsQEhIiBEkzDgkFGDzAbIY2Cv4AACvrBgJjYNGfwAAAABJRU5ErkJggg==);
+    /*Credits -> From: https://freefrontend.com/css-background-patterns/ - created by Chris Smith on January 30, 2019*/
 
     
 }
 
+.title-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 4rem;
+    
+}
+
+.title-intro h1 {
+    margin-right: 3rem;
+    padding-right: 3rem;
+    transition: opacity 0.15s;
+    
+}
+
+.title-intro h1:hover {
+    cursor: pointer;
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(0, 0, 0); }
+  25% {color: #0046D4}
+  50% { color: rgb(134, 5, 95); }
+  75% {color: rgb(3, 165, 89)}
+  100% { color:#01246b; }
+}
 
 
 .display-picture {
     object-fit: cover;
-    width: 25rem;
-    height: 25rem;
+    width: 50rem;
+    height: 50rem;
+    padding-left: 4rem;
     margin-left: 15rem;
+    margin-right: 13rem;
     padding-bottom: 3rem;
+    border-radius: 100%;
+    
     
 
+}
 
+.display-box {
+    display: flex;
 }
 
 /*About Section Styling*/
 
 .about {
-    background-color: #D48E0D;
-    height: 100%;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #F2A922);
+    background-size: 175% 175%;
     margin-top: 0rem;
-
-    
+    margin-bottom: 0rem;
+    padding: 0rem;
 }
 
 
+    
+
 .about h2 {
-    margin: 1rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
 }
 
 .about h2, p {
     color: #0D0D0D;
+}
+
+.about p {
+    font-size: 1.25rem;
+    margin: 0rem;
+    padding-bottom: 2rem;
+}
+
+/*Projects Section Styling*/
+
+.projects {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #0046D4);
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+    
+}
+
+.projects h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 1.5rem;
+}
+
+.projects-list li {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+ 
+    
+}
+
+.projects-list li a {
+    text-decoration: none;
+}
+
+.projects-list {
+    margin-bottom: 0rem;
+}
+
+/*Technologies Styling Section*/
+
+.technologies {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #F2A922);
+    margin-top: 0rem;
+  
+}
+
+.technologies img {
+    height: 4rem;
+    width: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.technologies h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 0rem;
+    
 }
