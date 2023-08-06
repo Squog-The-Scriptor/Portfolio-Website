@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    background-image:linear-gradient(to right, transparent 0%, #fff 35%, #0046D4 67%, transparent 100%), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N89+7dfwYsQEhIiBEkzDgkFGDzAbIY2Cv4AACvrBgJjYNGfwAAAABJRU5ErkJggg==);
+    background-image:linear-gradient(to right, transparent 0%, #fff 35%, #0046D4 70%, transparent 100%), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N89+7dfwYsQEhIiBEkzDgkFGDzAbIY2Cv4AACvrBgJjYNGfwAAAABJRU5ErkJggg==);
     /*Credits -> From: https://freefrontend.com/css-background-patterns/ - created by Chris Smith on January 30, 2019*/
 
     
@@ -83,6 +83,7 @@
     margin-right: 3rem;
     padding-right: 3rem;
     transition: opacity 0.15s;
+    font-size: 2.5rem;
     
 }
 
@@ -114,6 +115,11 @@
 
 }
 
+.display-picture:hover {
+    border-radius:0;
+   
+}
+
 .display-box {
     display: flex;
 }
@@ -127,13 +133,12 @@
     margin-bottom: 0rem;
     padding: 0rem;
 }
-
-
     
 
 .about h2 {
     margin-top: 0rem;
     padding-top: 1rem;
+    font-size: 2rem;
 }
 
 .about h2, p {
@@ -159,6 +164,7 @@
     margin-top: 0rem;
     margin-bottom: 0rem;
     padding-top: 1.5rem;
+    font-size: 2rem;
 }
 
 .projects-list li {
@@ -189,11 +195,18 @@
     width: 4rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
+    transition: padding 0.15s;
+}
+
+.technologies img:hover {
+    cursor: pointer;
+    padding-bottom: 0.2rem;
 }
 
 .technologies h2 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-top: 0rem;
+    font-size: 2rem;
     
 }
