@@ -75,13 +75,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 4rem;
+
     
 }
 
 .title-intro h1 {
-    margin-right: 3rem;
-    padding-right: 3rem;
+    margin-left: 10rem;
     transition: opacity 0.15s;
     font-size: 2.5rem;
     
@@ -209,20 +208,40 @@
     font-size: 30px;
     text-align: center;
   }
-/* 
-.projects-list li {
-    font-size: 1.25rem;
-    padding-bottom: 1rem;
- 
-    
-}
-
-.projects-list li a {
-    text-decoration: none;
-} */
 
 .projects-list {
     margin-bottom: 0rem;
+}
+
+.project-grid-item a img {
+}
+    
+#projec-title {
+    padding-top: 5rem;
+    
+}
+
+#project-title a {
+    padding-top: 6rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#project-title a:visited {
+    color: black;
+}
+
+#project-title:hover {
+    cursor: pointer;
+}
+
+#results-summary-project {
+    padding-top: 5rem;
+}
+
+
+#QR {
+    padding-top: 4rem;
 }
 
 /*Technologies Styling Section*/
@@ -261,8 +280,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#01000f;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #0046D4);
     font-size: 1.25rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -270,4 +290,15 @@
     padding: 1.25rem;
     color:white;
     margin: 0rem;
+}
+
+.copyright img {
+    vertical-align: bottom;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+ 
+}
+
+.copyright a {
+    font-weight: bolder;
 }
