@@ -1,3 +1,7 @@
+.html {
+    margin: 0rem;
+}
+
 .main {
     font-family: 'Roboto', sans-serif;
 }
@@ -313,10 +317,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-area: auto;
+    grid-gap: 1rem;
 
   }
 
-  .project-grid-item {
+.project-grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1.25rem;
     font-size: 2rem;
@@ -348,6 +353,7 @@
 
 #results-summary-project {
     padding-top: 5rem;
+    padding-right: 10rem;
 }
 
 
