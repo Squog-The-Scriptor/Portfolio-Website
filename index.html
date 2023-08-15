@@ -4,8 +4,11 @@
             <meta charset="UTF-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" type="text/css" href="/CSS Styling/Mainsite-styling.css"/> 
-            <!-- <link rel="stylesheet" type="text/css" href="/CSS Styling/Mainsite-styling.css"/> -->
+            <link rel="stylesheet" type="text/css" href="/CSS Styling/Mainsite-styling.css"/> \
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+            
         </head>
 
         <nav class ='nav-bar'>
@@ -19,7 +22,20 @@
                     <a class = 'nav-highlight' href = "#tech-page">Technologies</a>
                     <a class = 'nav-highlight' href = "/contact-info.html">Contact</a>
                 </div>
-                <div id ='blank'></div>
+                
+                <div class = 'dropdown'>
+                    <button class = 'drop-button' onclick = "dropFunction()">
+                        More Links &#9660
+                    </button>
+
+                    <div class = 'dropdown-content' id = 'myDropdown'>
+                        <a href = 'https://www.hopemarkham.ca/' target="_blank">Church</a>
+                        <a href = 'https://www.desiringgod.org/topics/the-gospel#what-is-the-gospel' target="_blank">The Gospel</a>
+                        <a href = '#'>Fitness Myths</a>
+
+                    </div>
+                </div>
+
             </div>
           
         </nav>
@@ -46,12 +62,12 @@
                     Hello Internet Web-Traveller! Thanks for visiting my portfolio website! 
                     I'm Kevin, I am a Kinesiologist who works at a Physiotherapy clinic. <br> I help people become pain free and get to back to their normal lives. 
                     <br><br>I currently am learning how to self-code and are looking to transition into Front-End Engineering then into Software Engineering later on!<br>
-                    I enjoy gaming, card and board games (Yugioh and MTG). <br> Also I am passionate about cooking at a high level and trying interesting new foods!
-                    <br><br>Physical fitness and strength training are a core essential aspects of my life! I also enjoy watching movies and learning about history! 
-                    <br><br>
+                    I enjoy gaming, card and board games. I am passionate about cooking and trying interesting and new foods! I also enjoy watching movies and learning about history! 
+            
+                    <br><br>Physical fitness and strength training are also core essential aspects of my life! 
                     I am excited to continue my journey towards becoming a Front-End Engineer and eventually a Software Engineer!
                 </p>
-
+            
                 </div>
                 
                 
@@ -68,10 +84,18 @@
         <div class = 'projects' id='projects-page'>
             <h2>Projects</h2>
             <div class = 'projects-grid-container'>
-               
-                <div class = 'project-grid-item' id = 'results-summary-project'><a href = 'https://results-summary-component-pi-livid.vercel.app' target="_blank"><img src = '/Images/results-summary-project-image.png'></a></div>
-                <div class = 'project-grid-item'><a href = 'https://nft-preview-card-six-tau.vercel.app' target="_blank"><img src = '/Images/NFT-project-image.png'></a></div>
-                <div class = 'project-grid-item' id= 'QR'><a href = 'https://qr-code-theta-lyart.vercel.app' target="_blank"><img src = '/Images/QR-project-image.png'></a></div>
+                
+                <div class = 'project-grid-item' id = 'results-summary-project'>
+                    <a href = 'https://results-summary-component-pi-livid.vercel.app' target="_blank"><img src = '/Images/results-summary-project-image.png'></a>
+                </div>
+
+                <div class = 'project-grid-item'>
+                    <a href = 'https://nft-preview-card-six-tau.vercel.app' target="_blank"><img src = '/Images/NFT-project-image.png'></a>
+                </div>
+
+                <div class = 'project-grid-item' id= 'QR'>
+                    <a href = 'https://qr-code-theta-lyart.vercel.app' target="_blank"> <img src = '/Images/QR-project-image.png'></a>
+                </div>
                 <!-- <div class = 'project-grid-item' id = 'project-title'><a href = 'https://results-summary-component-pi-livid.vercel.app' target="_blank">Results Summary Page</a></div>
                 <div class = 'project-grid-item' id = 'project-title'><a href = 'https://nft-preview-card-six-tau.vercel.app' target="_blank">NFT Preview Card</a></div>
                 <div class = 'project-grid-item' id = 'project-title'><a href = 'https://qr-code-theta-lyart.vercel.app' target="_blank">QR Code</a></div> -->
@@ -99,9 +123,6 @@
 
         <!--Javascript Section-->
         
-
-        <script>
-
-        </script>
+        <script src = './script.js'></script>
         
     </body>
