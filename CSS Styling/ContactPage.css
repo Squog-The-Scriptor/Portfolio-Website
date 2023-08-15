@@ -17,7 +17,21 @@
 
 .contact-icon {
     height: 4rem;
-    width: 4rem;
+    width: 100%;
     padding-left: 3rem;
     padding-top: 2rem;
+}
+
+/* Nav Bar Styling */
+
+@media screen and (max-width: 650px) {
+    .nav-item {
+        font-size: 3vw;
+    }
+  
+    .logo-image {
+        height: 5rem;
+        max-width: 100%;
+    }
+    
 }

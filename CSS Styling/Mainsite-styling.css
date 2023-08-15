@@ -1,15 +1,11 @@
 
-.body {
-    
-    
-}
-
 
 /* Navigation Bar Styling */
 .nav-bar {
     margin: 0rem;
     padding: 0rem;
     background-color: #0D0D0D;
+    overflow: auto;
     
 }
 
@@ -24,7 +20,7 @@
 .logo-image {
     padding-top: 0.5rem;
     height: 8rem;
-    width: 8rem;
+    width:100%;
 }
 
 .nav-items a, #logo {
@@ -61,6 +57,7 @@
 .main-page {
     display: flex;
     margin:0;
+    max-width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -80,15 +77,15 @@
 }
 
 .title-intro h1 {
-    margin-left: 10rem;
     transition: opacity 0.15s;
-    font-size: 2.5rem;
+    font-size: 2vw;
     
 }
 
 .title-intro h1:hover {
     cursor: pointer;
     animation: color-change 5s infinite;
+    font-size: 2vw;
 }
 
 @keyframes color-change {
@@ -99,17 +96,60 @@
   100% { color:#01246b; }
 }
 
+/* Responsive Styling */
+
+    /*For tablets */
+@media screen and (max-width: 768px) {
+    .title-intro h1 {
+        font-size: 2vw;
+        padding-left: 10rem;
+    }
+
+    .about-info, .projects, .technologies {
+        padding: 0rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .nav-bar, .main-page, .about-info, .projects, .technologies, .footer {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .cooking-image {
+        height: 5rem;
+        width: 5rem;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 650px) {
+    .nav-item {
+        font-size: 3vw;
+    }
+  
+    .logo-image {
+        height: 5rem;
+        max-width: 100%;
+    }
+    
+}
 
 .display-picture {
     object-fit: cover;
-    width: 50rem;
-    height: 50rem;
+    max-width: 100%;
+    height: 30rem;
     padding-left: 4rem;
-    margin-left: 15rem;
-    margin-right: 13rem;
     padding-bottom: 3rem;
     border-radius: 100%;
-    
+    max-width: 100%;
     
 
 }
@@ -118,6 +158,7 @@
     filter: drop-shadow(1rem 0 0.5rem #01000f);
     border-radius: 0%;
     cursor: pointer;
+    
    
 }
 
@@ -140,7 +181,7 @@
     
 
 .about-info {
-    margin-left: 15rem;
+    padding-left: 15rem;
   
 }
 
@@ -168,13 +209,15 @@
 }
 
 .about p {
-    font-size: 1.25rem;
+    font-size: 1vw;
     margin: 0rem;
     padding-bottom: 2rem;
 }
 
 .cooking-image {
     display: flex;
+    max-width: 100%;
+    height: auto;
    
 }
 
@@ -199,13 +242,15 @@
 
 .projects-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1.25rem;
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
+    grid-area: auto;
+
   }
+
   .project-grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    font-size: 30px;
+    padding: 1.25rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -213,9 +258,6 @@
     margin-bottom: 0rem;
 }
 
-.project-grid-item a img {
-}
-    
 #projec-title {
     padding-top: 5rem;
     
@@ -249,16 +291,17 @@
 .technologies {
     background-image: linear-gradient(to right, rgba(255,0,0,0), #F2A922);
     margin-top: 0rem;
-    margin-left: 15rem;
+    padding-left: 15rem;
   
 }
 
 .technologies img {
-    height: 4rem;
-    width: 4rem;
+    height: auto;
+    max-width: 4rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
     transition: padding 0.15s;
+   
 }
 
 .technologies img:hover {
