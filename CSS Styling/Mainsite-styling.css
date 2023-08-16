@@ -315,7 +315,7 @@
 
 .projects-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
     grid-area: auto;
     grid-gap: 1rem;
 
